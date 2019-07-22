@@ -1,0 +1,77 @@
+body {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    height: 100%;
+}
+
+section {
+    /* Background image */
+    background-image: url(../images/nicolas-j-leclercq-OOuPX8bcpjI-unsplash.jpg);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Style text to make it readable from background */
+
+.displayText {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Style credit text for photo used as background image */
+
+#credit {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 16px;
+    padding-right: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Formatting for the instructions */
+
+p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/* Crystal placement on the screen */
+
+.crystals {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Each crystals styling */
+
+.crystal {
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow .5s;
+}
+
+
+/* Hover effects */
+
+.crystal:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    transform: translate(1px, 5px);
+    cursor: pointer;
+    transition: box-shadow .5s, transform 1s;
+}
